@@ -13,3 +13,14 @@ plt.title('Distribution of Restaurant Ratings')
 plt.xlabel('Rating')
 plt.ylabel('Number of Restaurants')
 plt.show()
+
+df['Has Online Delivery'].value_counts().plot(
+    kind='pie',
+    autopct='%1.1f%%',
+    figsize=(7,7)
+)
+
+plt.title('Online Delivery Distribution')
+plt.ylabel('')
+plt.savefig('online_delivery_distribution.png')
+plt.show()
